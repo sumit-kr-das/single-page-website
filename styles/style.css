@@ -69,11 +69,40 @@ nav .nav-container a {
   text-decoration: none;
 }
 
+nav .header-container {
+  text-align: left;
+  margin: 6rem 25vw;
+}
+
+nav .header-container h1 {
+  font-size: 3.7rem;
+  font-family: arial;
+  color: #fff;
+}
+
+nav .header-container p {
+  color: #fff;
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
 .btn {
-  padding: 0.6rem 1.5rem;
+  padding: 0.8rem 1.2rem;
   border: none;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-yellow {
+  background: #FFE375;
+}
+
+.btn-purple {
+  background-color: #62497B;
+  color: #fff;
 }
 
 header .slider-container {
@@ -91,13 +120,13 @@ header .slider-container {
 
 header .slider-container .slider {
   width: 100%;
-  height: 670px;
+  height: 740px;
   overflow: hidden;
 }
 
 header .slider-container .slider .slides {
   width: 500%;
-  height: 670px;
+  height: 740px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,7 +203,7 @@ header .slider-container .slider .slides .navigation-auto {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 630px;
+  margin-top: 700px;
 }
 
 header .slider-container .slider .slides .navigation-auto > div {

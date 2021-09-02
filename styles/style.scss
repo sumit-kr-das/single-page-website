@@ -61,15 +61,38 @@ nav{
             text-decoration: none;
         }
     }
+    & .header-container{
+        text-align: left;
+        margin: 6rem 25vw;
+        & h1{
+            font-size: 3.7rem;
+            font-family: $main-font;
+            color: $pure-white;
+        }
+        & p{
+            color: $pure-white;
+            margin: 1.5rem 0;
+            font-size: 2rem;
+            font-family: sans-serif;
+        }
+    }
 }
 
 .btn{
-    padding: 0.6rem 1.5rem;
+    padding: 0.8rem 1.2rem;
     border: none;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.btn-yellow{
+    background: $yellow;
+}
+.btn-purple{
+    background-color: $purple;
+    color: $pure-white;
+}
 
 // slider section
 header .slider-container{
@@ -79,12 +102,12 @@ header .slider-container{
     background-color: $purple;
     & .slider{
         width: 100%;
-        height: 670px;
+        height: 740px;
         // border-radius: 10px;
         overflow: hidden;
         & .slides{
             width: 500%;
-            height: 670px;
+            height: 740px;
             display: flex;
             & img{
                 width: 100%;
@@ -142,7 +165,7 @@ header .slider-container .slider .slides .navigation-auto{
     display: flex;
     width: 800px;
     justify-content: center;
-    margin-top: 630px;
+    margin-top: 700px;
 
     & > div{
         border: 2px solid $bg-light-gray;
@@ -168,3 +191,7 @@ header .slider-container .slider .slides #radio4:checked ~ .navigation-auto .aut
     background: $bg-dark-gray;
 }
 //sroller end
+
+
+// info section
+
