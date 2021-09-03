@@ -93,7 +93,15 @@ nav .header-container p {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
+  background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #62497B;
+  color: #fff;
 }
 
 .btn-yellow {
@@ -232,5 +240,150 @@ header .slider-container .slider .slides #radio3:checked ~ .navigation-auto .aut
 
 header .slider-container .slider .slides #radio4:checked ~ .navigation-auto .auto-btn4 {
   background: #E4E4E4;
+}
+
+section.info {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+section.info .info-container {
+  margin: 2rem 15rem;
+}
+
+section.info .info-container .heading {
+  text-align: center;
+  font-family: arial;
+  font-size: 2.5rem;
+}
+
+section.info .info-container .info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 0;
+}
+
+section.info .info-container .info-wrapper > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  padding: 0 5rem;
+}
+
+section.info .info-container .info-wrapper > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.info .info-container .info-wrapper > div h1 {
+  font-family: arial;
+  margin: 1rem 0;
+}
+
+section.info .info-container .info-wrapper > div p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 1.5rem;
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section.info .info-container .info-wrapper:last-child .img {
+  background-color: #62497B;
+  display: inline-block;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+section.info .info-container .info-wrapper:last-child img {
+  padding: 10px;
+  width: 45px;
+  height: 49px;
+  margin-left: 8px;
+  margin-top: 4px;
+}
+
+section.project {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: arial;
+  margin: 2rem 0;
+}
+
+section.project > h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+section.project .project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+section.project .project-container img {
+  width: 100%;
+  height: 70%;
+}
+
+section.project .project-container > div .text {
+  padding: 1.5rem;
+}
+
+section.project .project-container > div .text p {
+  padding: 0.5rem 0;
+}
+
+section.project .project-container > div .text button {
+  margin-bottom: 4rem;
+}
+
+section.project .project-container > div:nth-child(odd) {
+  background-color: #EFEFEF;
+}
+
+section.project .project-container > div:nth-child(even) {
+  background-color: #E4E4E4;
+}
+
+section.project .project-container > div:hover {
+  background-color: #FFE375;
+}
+
+section.pricing {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin: 2rem 15rem;
+}
+
+section.pricing .pricing-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

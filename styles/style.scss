@@ -84,7 +84,13 @@ nav{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
+    background-color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+    transition: $smooth;
+    &:hover{
+        background-color: $purple;
+        color: $pure-white;
+    }
 }
 .btn-yellow{
     background: $yellow;
@@ -195,3 +201,112 @@ header .slider-container .slider .slides #radio4:checked ~ .navigation-auto .aut
 
 // info section
 
+section.info{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    & .info-container{
+        margin: 2rem 15rem;
+        & .heading{
+            text-align: center;
+            font-family: $main-font;
+            font-size: 2.5rem;
+        }
+        & .info-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 2rem 0;
+            & > p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.8rem;
+                padding: 0 5rem;
+            }
+            & > div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                & h1{
+                    font-family: $main-font;
+                    margin: 1rem 0;
+                }
+                & p{
+                    font-family: Arial, Helvetica, sans-serif;
+                    text-align: center;
+                    line-height: 1.5rem;
+                    padding: 0 1.5rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        & .info-wrapper:last-child{
+            & .img{
+                background-color: $purple;
+                display: inline-block;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+            }
+            & img{
+                padding: 10px;
+                width: 45px;
+                height: 49px;
+                margin-left: 8px;
+                margin-top: 4px;
+            }
+        }
+    }
+}
+
+// project section
+
+section.project{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: $main-font;
+    margin: 2rem 0;
+    & > h1{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    & .project-container{
+        display: flex;
+        transition: $smooth;
+        & img{
+            width: 100%;
+            height: 70%;
+        }
+        & > div .text{
+            padding: 1.5rem;
+            & p{
+                padding: 0.5rem 0;
+            }
+            & button{
+                margin-bottom: 4rem;
+            }
+        }
+        & > div:nth-child(odd){
+            background-color: $bg-light-gray;
+        }
+        & > div:nth-child(even){
+            background-color: $bg-dark-gray;
+        }
+        & > div:hover{
+            background-color: $yellow;
+        }
+    }
+}
+
+// pricing section
+
+section.pricing{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin: 2rem 15rem;
+    & .pricing-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
