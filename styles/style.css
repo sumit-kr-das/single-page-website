@@ -7,6 +7,7 @@
 
 body {
   -webkit-font-smoothing: antialiased;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -323,7 +324,6 @@ section.info .info-container .info-wrapper:last-child img {
 }
 
 section.project {
-  max-width: 1440px;
   margin: 0 auto;
   font-family: arial;
   margin: 2rem 0;
@@ -356,10 +356,6 @@ section.project .project-container > div .text p {
   padding: 0.5rem 0;
 }
 
-section.project .project-container > div .text button {
-  margin-bottom: 4rem;
-}
-
 section.project .project-container > div:nth-child(odd) {
   background-color: #EFEFEF;
 }
@@ -378,12 +374,38 @@ section.pricing {
   margin: 2rem 15rem;
 }
 
+section.pricing > h1 {
+  text-align: center;
+  font-family: arial;
+  font-size: 2rem;
+}
+
 section.pricing .pricing-container {
+  text-align: center;
+  margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+section.pricing .pricing-container h2 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  padding-bottom: 0.5rem;
+}
+
+section.pricing .pricing-container h4 {
+  color: #ABABAB;
+}
+
+section.pricing .pricing-container p {
+  padding: 0.5rem 0;
+}
+
+section.pricing .pricing-container hr {
+  border: 0.2px solid #CBCBCB;
 }
 /*# sourceMappingURL=style.css.map */
