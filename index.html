@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Zippy</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -85,7 +86,7 @@
                 <img src="./assects/logo/Umbrella Icon.png" alt="">
             </div>
             <div class="info-wrapper">
-                <div>
+                <div data-aos="fade-right">
                     <div class="img">
                         <img src="./assects/logo/Bell Icon.png" alt="bell-1">
                     </div>
@@ -93,7 +94,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis maiores cupiditate error rem aliquid et aut quod inventore alias ipsum!</p>
                     <button class="btn btn-purple">Lorem More</button>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <div class="img">
                         <img src="./assects/logo/Envelop Icon.png" alt="bell-1">
                     </div>
@@ -101,7 +102,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis maiores cupiditate error rem aliquid et aut quod inventore alias ipsum!</p>
                     <button class="btn btn-yellow">Lorem More</button>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <div class="img">
                         <img src="./assects/logo/Drawer Icon.png" alt="bell-1">
                     </div>
@@ -188,7 +189,13 @@
     <!-- video projects -->
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 400,
+          duration: 1000
+      });
+    </script>  
     <script src="./script/mainScript.js"></script>
 </body>
 
