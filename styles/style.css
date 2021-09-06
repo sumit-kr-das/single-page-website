@@ -433,17 +433,114 @@ section.video_projects .items > div {
   padding-top: 0.5rem;
 }
 
-.slick-slide {
+section.video_projects .slick-slide {
   margin: 0 50px;
 }
 
-.slick-slide img {
+section.video_projects .slick-slide img {
   width: 100%;
+}
+
+section.team {
+  max-width: 1440px;
+  margin: 4rem auto;
+}
+
+section.team h1 {
+  text-align: center;
+  font-size: 2rem;
 }
 
 section.team .team-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+section.team .team-container > div {
+  margin: 2rem 3rem;
+}
+
+section.life {
+  padding: 5rem 10rem;
+  background-color: #CBCBCB;
+}
+
+section.life h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+section.life .life-container .sliderfor {
+  margin: 0 0.5rem;
+}
+
+section.life .life-container .nav-slider-main {
+  position: relative;
+}
+
+section.life .life-container .nav-slider-main .slidernav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 4rem;
+}
+
+section.life .life-container .nav-slider-main .arrow {
+  background-color: #62497B;
+  padding: 2.7rem 1rem;
+  display: inline;
+  position: absolute;
+  z-index: 20;
+  color: #fff;
+}
+
+section.life .life-container .nav-slider-main .leftArrow {
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+section.life .life-container .nav-slider-main .rightArrow {
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section.life .life-container .slick-slide {
+  margin: 0 10px;
+}
+
+section.life .life-container .slick-slide img {
+  width: 100%;
+}
+
+section.news {
+  background-image: url("../assects/logo/bg-img.png");
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 0;
+}
+
+section.news h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+section.news .news-container {
+  padding: 2rem 0;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -350,21 +350,103 @@ section.video_projects{
         font-size: 10px;
         padding-top: 0.5rem;
     }
+    // slick slider
+    .slick-slide{
+        margin: 0 50px;
+    }
+    .slick-slide img{
+        width: 100%;
+    }
 }
 
-// slick slider
 
-.slick-slide{
-    margin: 0 50px;
-}
-.slick-slide img{
-    width: 100%;
-}
 
 // Team Creadit section
 
 section.team{
+    max-width: 1440px;
+    margin: 4rem auto;
+    & h1{
+        text-align: center;
+        font-size: 2rem;
+    }
     & .team-container{
         display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        & > div{
+            margin: 2rem 3rem;
+        }
+    }
+}
+
+// life section
+
+section.life{
+    padding: 5rem 10rem;
+    background-color: $dark-gray-icn;
+    & h1{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    & .life-container{
+        & .sliderfor{
+            margin: 0 0.5rem;
+        }
+        & .nav-slider-main{
+            // border: 1px solid red;
+            position: relative;
+            & .slidernav{
+                display: flex;
+                padding: 0 4rem;
+            }
+            & .arrow{
+                background-color: $purple;
+                padding: 2.7rem 1rem;
+                display: inline;
+                position: absolute;
+                z-index: 20;
+                color: $pure-white;
+            }
+            & .leftArrow{
+                top: 50%;
+                left: 0%;
+                transform: translate(50%, -50%);
+            }
+            & .rightArrow {
+                top: 50%;
+                right: 0;
+                transform: translate(-50%, -50%);   
+            }
+        }
+
+        .slick-slide{
+            margin: 0 10px;
+        }
+        .slick-slide img{
+            width: 100%;
+        }
+    }
+}
+
+// news-letter grou
+
+section.news{
+    background-image: url('../assects/logo/bg-img.png');
+    background-position: center;
+    background-size: cover;
+    padding: 4rem 0;
+    
+    & h1{
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: $pure-white;
+    }
+    & .news-container{
+        padding: 2rem 0;
+        text-align: center;
     }
 }

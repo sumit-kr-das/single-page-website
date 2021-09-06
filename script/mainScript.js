@@ -17,11 +17,12 @@ AOS.init({
 // slick slider code
 $(document).ready(function(){
   $('.multiple-items').slick({
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows:false,
+    centerMode: true,
     responsive: [
       {
         breakpoint: 768,
@@ -38,3 +39,23 @@ $(document).ready(function(){
     ]
   });
 })
+
+// slick slider life section
+
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true,
+  prevArrow:'.leftArrow',
+  nextArrow:'.rightArrow'
+});
