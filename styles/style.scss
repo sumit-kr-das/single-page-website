@@ -266,13 +266,14 @@ section.project{
     // max-width: 1440px;
     margin: 0 auto;
     font-family: $main-font;
-    margin: 2rem 0;
+    
     & > h1{
         text-align: center;
         font-size: 2rem;
         margin-bottom: 2rem;
     }
     & .project-container{
+        margin: 2rem 0;
         display: flex;
         transition: $smooth;
         & img{
@@ -304,8 +305,7 @@ section.project{
 
 section.pricing{
     max-width: 1440px;
-    margin: 0 auto;
-    margin: 2rem 15rem;
+    margin: 4rem auto;
     & > h1{
         text-align: center;
         font-family: $main-font;
@@ -313,7 +313,7 @@ section.pricing{
     }
     & .pricing-container{
         text-align: center;
-        margin: 2rem 0;
+        margin: 4rem 10rem;
         display: flex;
         justify-content: space-between;
         & h2{
@@ -330,5 +330,41 @@ section.pricing{
         & hr{
             border: 0.2px solid $dark-gray-icn;
         }
+    }
+}
+
+section.video_projects{
+    background-color: $purple;
+    padding: 2rem 0 5rem ;
+    & h1{
+        text-align: center;
+        color: $pure-white;
+        font-size: 2rem;
+        padding-bottom: 3rem;
+    }
+    & .items > div{
+        display: flex;
+        justify-content: space-between;
+        color: $dark-gray-icn;
+        text-transform: uppercase;
+        font-size: 10px;
+        padding-top: 0.5rem;
+    }
+}
+
+// slick slider
+
+.slick-slide{
+    margin: 0 50px;
+}
+.slick-slide img{
+    width: 100%;
+}
+
+// Team Creadit section
+
+section.team{
+    & .team-container{
+        display: flex;
     }
 }

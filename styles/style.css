@@ -326,7 +326,6 @@ section.info .info-container .info-wrapper:last-child img {
 section.project {
   margin: 0 auto;
   font-family: arial;
-  margin: 2rem 0;
 }
 
 section.project > h1 {
@@ -336,6 +335,7 @@ section.project > h1 {
 }
 
 section.project .project-container {
+  margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,8 +370,7 @@ section.project .project-container > div:hover {
 
 section.pricing {
   max-width: 1440px;
-  margin: 0 auto;
-  margin: 2rem 15rem;
+  margin: 4rem auto;
 }
 
 section.pricing > h1 {
@@ -382,7 +381,7 @@ section.pricing > h1 {
 
 section.pricing .pricing-container {
   text-align: center;
-  margin: 2rem 0;
+  margin: 4rem 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,5 +406,44 @@ section.pricing .pricing-container p {
 
 section.pricing .pricing-container hr {
   border: 0.2px solid #CBCBCB;
+}
+
+section.video_projects {
+  background-color: #62497B;
+  padding: 2rem 0 5rem;
+}
+
+section.video_projects h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+section.video_projects .items > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #CBCBCB;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-top: 0.5rem;
+}
+
+.slick-slide {
+  margin: 0 50px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+section.team .team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
