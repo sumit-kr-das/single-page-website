@@ -24,8 +24,14 @@ $pure-white:#fff;
 img{
     max-width: 100%;
 }
+p{
+    font-family: $secondary-fonts;
+}
 .root{
     overflow-x: hidden;
+}
+#hamburger{
+    display: none;
 }
 
 // navigation Bar
@@ -84,11 +90,10 @@ nav{
             font-size: 1.5rem;
             font-family: $secondary-fonts;
         }
+
     }
 }
- .fa-bars{
-    display: none;
-}
+
 @media(max-width:965px){
     nav .header-container h1 {
         font-size: 2.5rem;
@@ -101,7 +106,7 @@ nav{
         position: fixed;
         top: 0;
         left: -400px;
-        background-color: $purple;
+        background-color: #333;
         width: 250px;
         height: 100vh;
         padding: 1rem;
@@ -114,14 +119,17 @@ nav{
         margin-top: 1rem;
     }
     nav .nav-container ul li a{
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+    #hamburger{
+        display: block;
     }
     .fa-bars{
         display: block;
         position: absolute;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: $pure-white;
-        top: 20px;
+        top: 30px;
         left: 20px;
     }
 }
@@ -276,7 +284,7 @@ section.project{
     
     & > h1{
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: 2rem;
     }
     & .project-container{
@@ -291,9 +299,6 @@ section.project{
             padding: 1.5rem;
             & p{
                 padding: 0.5rem 0;
-            }
-            & button{
-                // margin-bottom: 4rem;
             }
         }
         & > div:nth-child(odd){
@@ -315,6 +320,14 @@ section.project{
     }
     section.project .project-container > div{
         margin: 2rem 0;
+        &:hover{
+            box-shadow: -3px 2px 56px -3px rgba(209,209,209,0.75);
+        }
+    }
+}
+@media(max-width:470px){
+    section.project .project-container {
+        margin: 0rem 2rem;
     }
 }
 
@@ -325,7 +338,7 @@ section.pricing{
     & > h1{
         text-align: center;
         font-family: $main-font;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     & .pricing-container{
         text-align: center;
@@ -352,6 +365,17 @@ section.pricing{
     section.pricing .pricing-container {
         flex-direction: column;
     }
+    hr{
+        display: none;
+    }
+}
+@media(max-width:560px){
+    section.pricing .pricing-container {
+        margin: 3rem 1rem;
+        & > div{
+            margin-bottom: 2rem;
+        }
+    }
 }
 
 section.video_projects{
@@ -360,7 +384,7 @@ section.video_projects{
     & h1{
         text-align: center;
         color: $pure-white;
-        font-size: 2rem;
+        font-size: 2.5rem;
         padding-bottom: 3rem;
     }
     & .items > div{
@@ -380,7 +404,7 @@ section.video_projects{
     }
 }
 
-@media(max-width:965px){
+@media(max-width:700px){
 
 }
 
@@ -392,7 +416,7 @@ section.team{
     margin: 4rem auto;
     & h1{
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     & .team-container{
         display: flex;
@@ -401,6 +425,31 @@ section.team{
         text-align: center;
         & > div{
             margin: 2rem 3rem;
+        }
+        & h2{
+            margin-top: 0.8rem;
+        }
+    }
+}
+@media(max-width:775px){
+    section.team {
+        max-width: 1440px;
+        margin: 2rem auto;
+    }
+    section.team h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    section.team .team-container > div {
+        margin: 1rem 0;
+        & img{
+            width: 50%;
+        }
+        & h2{
+            font-size: 1rem;
+        }
+        & p{
+            font-size: 0.8rem;
         }
     }
 }
@@ -412,7 +461,7 @@ section.life{
     background-color: $dark-gray-icn;
     & h1{
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-bottom: 2rem;
     }
     & .life-container{
@@ -420,7 +469,7 @@ section.life{
             margin: 0 0.5rem;
         }
         & .nav-slider-main{
-            // border: 1px solid red;
+            margin-top: 2rem;
             position: relative;
             & .slidernav{
                 display: flex;
@@ -445,7 +494,6 @@ section.life{
                 transform: translate(-50%, -50%);   
             }
         }
-
         .slick-slide{
             margin: 0 10px;
         }
@@ -455,17 +503,29 @@ section.life{
     }
 }
 
-// news-letter grou
+@media(max-width:950px){
+    section.life .life-container .nav-slider-main .arrow {
+        padding: 1.5rem .5rem;
+    }
+}
+@media(max-width:500px){
+    section.life h1 {
+        font-size: 2rem;
+    }
+    section.life {
+        padding: 2rem 0rem;
+    }
+}
 
+// news-letter grou
 section.news{
     background-image: url('../assects/logo/bg-img.png');
     background-position: center;
     background-size: cover;
     padding: 4rem 0;
-    
     & h1{
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-bottom: 2rem;
         color: $pure-white;
     }
@@ -490,12 +550,52 @@ section.news{
         }
     }
 }
+@media(max-width:500px){
+    section.news {
+        padding: 2rem 0;
+    }
+    section.news h1 {
+        font-size: 2rem;
+    }
+    section.news .news-container input {
+        font-size: 1rem;
+        padding: 0.7rem 0;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        border: none;
+        font-family: arial;
+    }
+}
 
 // blog section
 section.blog{
     margin: 4rem auto;
+    & h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
     & .blog-container{
+        margin: 0 4rem;
         display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        & > div{
+            margin: 2rem 3rem;
+            & h2{
+                margin: 1rem 0;
+            }
+            & p{
+                padding: 0.5rem 0;
+            }
+            & .date{
+                color: $light-gray-font;
+                font-weight: bold;
+            }
+            & img{
+                width: 80%;
+            }
+        }
         & button{
             background-color: $dark-gray-icn;
             &:hover{
@@ -511,27 +611,129 @@ section.blog{
         flex-direction: column;
     }
 }
+@media(max-width:500px){
+    section.blog h1 {
+        font-size: 2rem;
+    }
+    ection.blog .blog-container > div {
+        margin:1rem;
+    }
+    section.blog .blog-container > div h2 {
+        font-size: 1.2rem;
+    }
+    section.blog .blog-container {
+        margin: 0 1rem;
+    }
+    button{
+        margin-top: 0.5rem;
+    }
+}
 
 // contact section
-
 section.contact{
-    // display: flex;
+    display: flex;
+    & h1{
+        font-size: 2rem;
+    }
     & .contact-col{
+        display: flex;
         flex: 1 0 50%;
+        align-items: center;
         background-color: $yellow;
         & .form{
             display: flex;
             flex-direction: column;
-            
         }
     }
+    & .contact-col:last-child{
+        flex-direction: column;
+        justify-content: center;
+        & label{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-style: $secondary-fonts;
+            margin: 0.5rem 0;
+        }
+        & input{
+            padding: 0.8rem;
+            width: 27rem;
+            height: 3rem;
+            border: none;
+            font-family: $main-font;
+        }   
+        button{
+            margin-top: 1rem;
+        }
+    }
+}
+@media(max-width:999px){
+    section.contact {
+        flex-direction: column;
+    }
+    section.contact .contact-col:last-child {
+        padding: 2rem 1rem;
+    }
+}
+@media(max-width:500px){
+    iframe{
+        height: 400px;
+    }
+    section.contact .contact-col:last-child input {
+        padding: 0.8rem;
+        width: 18rem;
+        height: 3rem;
+        border: none;
+        font-family: $main-font;
+    } 
 }
 
 // footer section
 footer{
     margin: 4rem auto;
     & .footer-container{
+        margin: 0 12rem;
         display: flex;
         justify-content: space-between;
+        text-align: center;
+        & > div h2{
+            margin-bottom: 0.8rem;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+        }
+        & ul{
+            list-style: none;
+            & li{
+                margin: 0.5rem;
+            }
+            & li a{
+                text-decoration: none;
+                color: #000;
+            }
+        }
+        & .social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & li a{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}
+@media(max-width:953px){
+    footer .footer-container {
+        margin: 0 5rem;
+    }
+}
+@media(max-width:750px){
+    footer .footer-container {
+        margin: 0 5rem;
+    }
+    footer .footer-container {
+        flex-direction: column;
+        & > div{
+            margin-top: 2rem;
+        }
     }
 }
