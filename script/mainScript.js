@@ -8,6 +8,22 @@ $('.single-item').slick({
   arrows:false
 });
 
+//hamburger menu
+const hamburger = document.getElementById('hamburger');
+const lists = document.querySelector('.unOrdered');
+
+document.onclick = function(e){
+  if(e.target.class !== 'unOrdered' && e.target.id !== 'hamburger'){
+    lists.classList.remove('showBurger');
+  }
+}
+
+hamburger.addEventListener('click',()=>{
+  lists.classList.toggle('showBurger');
+  console.log("hi")
+})
+
+
 // aos Animation timer code
 AOS.init({
   offset: 300,

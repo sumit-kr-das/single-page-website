@@ -24,6 +24,9 @@ $pure-white:#fff;
 img{
     max-width: 100%;
 }
+.root{
+    overflow-x: hidden;
+}
 
 // navigation Bar
 
@@ -83,7 +86,9 @@ nav{
         }
     }
 }
-
+ .fa-bars{
+    display: none;
+}
 @media(max-width:965px){
     nav .header-container h1 {
         font-size: 2.5rem;
@@ -92,9 +97,33 @@ nav{
         font-size: 1.2rem;
     }
     nav .nav-container ul{
-        display: none;
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -400px;
+        background-color: $purple;
+        width: 250px;
+        height: 100vh;
+        padding: 1rem;
+        transition: $smooth;
     }
-
+    nav .nav-container ul.showBurger{
+        left: 0;
+    }
+    nav .nav-container ul li{
+        margin-top: 1rem;
+    }
+    nav .nav-container ul li a{
+        font-size: 1.2rem;
+    }
+    .fa-bars{
+        display: block;
+        position: absolute;
+        font-size: 2rem;
+        color: $pure-white;
+        top: 20px;
+        left: 20px;
+    }
 }
 
 // button utility
@@ -131,7 +160,20 @@ header .slider-container{
         object-fit: cover;
     }
 }
-
+@media(max-width:651px){
+    nav .header-container {
+        margin: 6rem 15vw;
+    }
+    nav .header-container h1 {
+        font-size: 1.4rem;
+    }
+    nav .header-container p {
+        font-size: 1rem;
+    }
+    header .slider-container .slider img {
+        height: 500px;
+    }
+}
 // info section
 section.info{
     max-width: 1440px;
@@ -190,6 +232,11 @@ section.info{
         }
     }
 }
+@media(max-width:1205px){
+    section.info .info-container {
+        margin: 2rem 5rem;
+    }
+}
 @media(max-width:965px){
     section.info .info-container .info-wrapper {
         flex-direction: column-reverse;
@@ -198,7 +245,29 @@ section.info{
         margin: 2rem 4rem;
     }
 }
-
+@media(max-width:674px){
+    section.info .info-container {
+        margin: 2rem;
+    }
+    section.info .info-container .heading {
+        font-size: 2rem;
+    }
+    section.info .info-container .info-wrapper > p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        padding-top:1rem;
+        margin: 1rem 0;
+        padding: 0;
+    }
+    section.info .info-container .heading {
+    text-align: center;
+    font-family: arial;
+    font-size: 2rem;
+    }
+    section.info .info-container .info-wrapper > div {
+        margin: 1rem 0;
+    }
+}
 // project section
 section.project{
     // max-width: 1440px;
@@ -239,8 +308,17 @@ section.project{
     }
 }
 
-// pricing section
+@media(max-width:965px){
+    section.project .project-container {
+        flex-direction: column;
+        margin: 2rem 4rem;
+    }
+    section.project .project-container > div{
+        margin: 2rem 0;
+    }
+}
 
+// pricing section
 section.pricing{
     max-width: 1440px;
     margin: 4rem auto;
@@ -270,6 +348,11 @@ section.pricing{
         }
     }
 }
+@media(max-width:965px){
+    section.pricing .pricing-container {
+        flex-direction: column;
+    }
+}
 
 section.video_projects{
     background-color: $purple;
@@ -297,6 +380,9 @@ section.video_projects{
     }
 }
 
+@media(max-width:965px){
+
+}
 
 
 // Team Creadit section
@@ -406,7 +492,6 @@ section.news{
 }
 
 // blog section
-
 section.blog{
     margin: 4rem auto;
     & .blog-container{
@@ -418,6 +503,12 @@ section.blog{
                 color: #000;
             }
         }
+    }
+}
+
+@media(max-width:965px){
+    section.blog .blog-container {
+        flex-direction: column;
     }
 }
 
