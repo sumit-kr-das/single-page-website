@@ -1,12 +1,12 @@
-var counter = 1;
-setInterval(() => {
-  document.getElementById(`radio${counter}`).checked = true;
-  counter++;
-
-  if (counter > 4) {
-    counter = 1;
-  }
-}, 5000);
+// header slider
+$('.single-item').slick({
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  dots: false,
+  infinite: true,
+  arrows:false
+});
 
 // aos Animation timer code
 AOS.init({
