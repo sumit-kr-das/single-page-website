@@ -448,5 +448,61 @@ section.news{
     & .news-container{
         padding: 2rem 0;
         text-align: center;
+        & span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        & input{
+            font-size: 1rem;
+            padding: 0.7rem 0;
+            padding-left: 1rem;
+            padding-right: 5rem;
+            border: none;
+            font-family: $main-font;
+            &:hover{
+                border: none;
+            }
+        }
+    }
+}
+
+// blog section
+
+section.blog{
+    margin: 4rem auto;
+    & .blog-container{
+        display: flex;
+        & button{
+            background-color: $dark-gray-icn;
+            &:hover{
+                background-color: $yellow;
+                color: #000;
+            }
+        }
+    }
+}
+
+// contact section
+
+section.contact{
+    display: flex;
+    & .contact-col{
+        flex: 1 0 50%;
+        background-color: $yellow;
+        & .form{
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+}
+
+// footer section
+footer{
+    margin: 4rem auto;
+    & .footer-container{
+        display: flex;
+        justify-content: space-between;
     }
 }
