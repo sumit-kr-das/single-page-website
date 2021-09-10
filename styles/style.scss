@@ -288,17 +288,18 @@ section.project{
         margin-bottom: 2rem;
     }
     & .project-container{
-        margin: 2rem 0;
+        padding: 2rem 0;
         display: flex;
         transition: $smooth;
         & img{
             width:100%;
-            height:70%;
+            height:65%;
         }
         & > div .text{
             padding: 1.5rem;
             & p{
                 padding: 0.5rem 0;
+                font-size: 14px;
             }
         }
         & > div:nth-child(odd){
@@ -312,7 +313,6 @@ section.project{
         }
     }
 }
-
 @media(max-width:965px){
     section.project .project-container {
         flex-direction: column;
