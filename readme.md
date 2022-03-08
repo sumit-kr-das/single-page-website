@@ -1,5 +1,3 @@
-## Intrenship Task : [ https://infallible-joliot-e173fd.netlify.app/ ]
-
 ## 📌 Motive of the Project
 
 <b>single-page-website</b> is a frontend project built in
